@@ -13,7 +13,7 @@ import MetalKit
 class MetalViewController: UIViewController {
     let device = MTLCreateSystemDefaultDevice()!
     lazy var mtkView: MTKView = {
-        let view = MTKView(frame: self.view.bounds, device: device)
+        let view = MTKView(frame: .zero, device: device)
         return view
     }()
     
@@ -25,6 +25,8 @@ class MetalViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         view.addSubview(mtkView)
+        let offsetY = UI.naviBarHeight + UI.statusBarHeight
+        mtkView.frame = CGRect(x: 0, y: offsetY, width: view.bounds.width, height: view.bounds.height - offsetY)
     }
     
     required init?(coder aDecoder: NSCoder) {

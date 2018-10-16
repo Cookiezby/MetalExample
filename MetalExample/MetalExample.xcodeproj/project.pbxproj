@@ -16,6 +16,9 @@
 		7626958E2176335500CC19BF /* MetalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7626958D2176335500CC19BF /* MetalViewController.swift */; };
 		762695922176342100CC19BF /* MPSScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762695912176342100CC19BF /* MPSScaleViewController.swift */; };
 		762695942176351000CC19BF /* gaki.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 762695932176351000CC19BF /* gaki.jpg */; };
+		7626959721763DF300CC19BF /* default.metal in Sources */ = {isa = PBXBuildFile; fileRef = 7626959621763DF300CC19BF /* default.metal */; };
+		7626959921763E5900CC19BF /* MTLTexture+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7626959821763E5900CC19BF /* MTLTexture+Helper.swift */; };
+		7626959B21763F2900CC19BF /* UIKit+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7626959A21763F2900CC19BF /* UIKit+Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		7626958D2176335500CC19BF /* MetalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalViewController.swift; sourceTree = "<group>"; };
 		762695912176342100CC19BF /* MPSScaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPSScaleViewController.swift; sourceTree = "<group>"; };
 		762695932176351000CC19BF /* gaki.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gaki.jpg; sourceTree = "<group>"; };
+		7626959621763DF300CC19BF /* default.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = default.metal; sourceTree = "<group>"; };
+		7626959821763E5900CC19BF /* MTLTexture+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MTLTexture+Helper.swift"; sourceTree = "<group>"; };
+		7626959A21763F2900CC19BF /* UIKit+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Helper.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,9 @@
 				76269574217632E100CC19BF /* Assets.xcassets */,
 				76269576217632E100CC19BF /* LaunchScreen.storyboard */,
 				76269579217632E100CC19BF /* Info.plist */,
+				7626959621763DF300CC19BF /* default.metal */,
+				7626959821763E5900CC19BF /* MTLTexture+Helper.swift */,
+				7626959A21763F2900CC19BF /* UIKit+Helper.swift */,
 			);
 			path = MetalExample;
 			sourceTree = "<group>";
@@ -232,9 +241,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				76269570217632DF00CC19BF /* ViewController.swift in Sources */,
+				7626959921763E5900CC19BF /* MTLTexture+Helper.swift in Sources */,
 				7626956E217632DF00CC19BF /* AppDelegate.swift in Sources */,
 				762695922176342100CC19BF /* MPSScaleViewController.swift in Sources */,
+				7626959B21763F2900CC19BF /* UIKit+Helper.swift in Sources */,
 				7626958E2176335500CC19BF /* MetalViewController.swift in Sources */,
+				7626959721763DF300CC19BF /* default.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
