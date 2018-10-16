@@ -13,6 +13,9 @@
 		76269575217632E100CC19BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76269574217632E100CC19BF /* Assets.xcassets */; };
 		76269578217632E100CC19BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76269576217632E100CC19BF /* LaunchScreen.storyboard */; };
 		76269583217632E100CC19BF /* MetalExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76269582217632E100CC19BF /* MetalExampleTests.swift */; };
+		7626958E2176335500CC19BF /* MetalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7626958D2176335500CC19BF /* MetalViewController.swift */; };
+		762695922176342100CC19BF /* MPSScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762695912176342100CC19BF /* MPSScaleViewController.swift */; };
+		762695942176351000CC19BF /* gaki.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 762695932176351000CC19BF /* gaki.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		7626957E217632E100CC19BF /* MetalExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetalExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76269582217632E100CC19BF /* MetalExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalExampleTests.swift; sourceTree = "<group>"; };
 		76269584217632E100CC19BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7626958D2176335500CC19BF /* MetalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalViewController.swift; sourceTree = "<group>"; };
+		762695912176342100CC19BF /* MPSScaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPSScaleViewController.swift; sourceTree = "<group>"; };
+		762695932176351000CC19BF /* gaki.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gaki.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +83,12 @@
 		7626956C217632DF00CC19BF /* MetalExample */ = {
 			isa = PBXGroup;
 			children = (
+				762695952176351700CC19BF /* image */,
+				762695902176340C00CC19BF /* CustomShader */,
+				7626958F217633F500CC19BF /* MetalPerformanceShader */,
 				7626956D217632DF00CC19BF /* AppDelegate.swift */,
 				7626956F217632DF00CC19BF /* ViewController.swift */,
+				7626958D2176335500CC19BF /* MetalViewController.swift */,
 				76269571217632DF00CC19BF /* Main.storyboard */,
 				76269574217632E100CC19BF /* Assets.xcassets */,
 				76269576217632E100CC19BF /* LaunchScreen.storyboard */,
@@ -94,6 +104,29 @@
 				76269584217632E100CC19BF /* Info.plist */,
 			);
 			path = MetalExampleTests;
+			sourceTree = "<group>";
+		};
+		7626958F217633F500CC19BF /* MetalPerformanceShader */ = {
+			isa = PBXGroup;
+			children = (
+				762695912176342100CC19BF /* MPSScaleViewController.swift */,
+			);
+			path = MetalPerformanceShader;
+			sourceTree = "<group>";
+		};
+		762695902176340C00CC19BF /* CustomShader */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomShader;
+			sourceTree = "<group>";
+		};
+		762695952176351700CC19BF /* image */ = {
+			isa = PBXGroup;
+			children = (
+				762695932176351000CC19BF /* gaki.jpg */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +213,7 @@
 				76269578217632E100CC19BF /* LaunchScreen.storyboard in Resources */,
 				76269575217632E100CC19BF /* Assets.xcassets in Resources */,
 				76269573217632DF00CC19BF /* Main.storyboard in Resources */,
+				762695942176351000CC19BF /* gaki.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +233,8 @@
 			files = (
 				76269570217632DF00CC19BF /* ViewController.swift in Sources */,
 				7626956E217632DF00CC19BF /* AppDelegate.swift in Sources */,
+				762695922176342100CC19BF /* MPSScaleViewController.swift in Sources */,
+				7626958E2176335500CC19BF /* MetalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
