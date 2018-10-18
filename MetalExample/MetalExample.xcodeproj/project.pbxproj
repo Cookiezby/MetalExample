@@ -19,6 +19,8 @@
 		7626959721763DF300CC19BF /* default.metal in Sources */ = {isa = PBXBuildFile; fileRef = 7626959621763DF300CC19BF /* default.metal */; };
 		7626959921763E5900CC19BF /* MTLTexture+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7626959821763E5900CC19BF /* MTLTexture+Helper.swift */; };
 		7626959B21763F2900CC19BF /* UIKit+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7626959A21763F2900CC19BF /* UIKit+Helper.swift */; };
+		76A865342178B79C00E7886E /* gridworld.metal in Sources */ = {isa = PBXBuildFile; fileRef = 76A865332178B79C00E7886E /* gridworld.metal */; };
+		76A865362178B7CA00E7886E /* MetalCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A865352178B7CA00E7886E /* MetalCameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		7626959621763DF300CC19BF /* default.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = default.metal; sourceTree = "<group>"; };
 		7626959821763E5900CC19BF /* MTLTexture+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MTLTexture+Helper.swift"; sourceTree = "<group>"; };
 		7626959A21763F2900CC19BF /* UIKit+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Helper.swift"; sourceTree = "<group>"; };
+		76A865332178B79C00E7886E /* gridworld.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = gridworld.metal; sourceTree = "<group>"; };
+		76A865352178B7CA00E7886E /* MetalCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalCameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,17 +93,18 @@
 		7626956C217632DF00CC19BF /* MetalExample */ = {
 			isa = PBXGroup;
 			children = (
+				76A865322178B78100E7886E /* shader */,
 				762695952176351700CC19BF /* image */,
 				762695902176340C00CC19BF /* CustomShader */,
 				7626958F217633F500CC19BF /* MetalPerformanceShader */,
 				7626956D217632DF00CC19BF /* AppDelegate.swift */,
 				7626956F217632DF00CC19BF /* ViewController.swift */,
 				7626958D2176335500CC19BF /* MetalViewController.swift */,
+				76A865352178B7CA00E7886E /* MetalCameraViewController.swift */,
 				76269571217632DF00CC19BF /* Main.storyboard */,
 				76269574217632E100CC19BF /* Assets.xcassets */,
 				76269576217632E100CC19BF /* LaunchScreen.storyboard */,
 				76269579217632E100CC19BF /* Info.plist */,
-				7626959621763DF300CC19BF /* default.metal */,
 				7626959821763E5900CC19BF /* MTLTexture+Helper.swift */,
 				7626959A21763F2900CC19BF /* UIKit+Helper.swift */,
 			);
@@ -136,6 +141,15 @@
 				762695932176351000CC19BF /* gaki.jpg */,
 			);
 			path = image;
+			sourceTree = "<group>";
+		};
+		76A865322178B78100E7886E /* shader */ = {
+			isa = PBXGroup;
+			children = (
+				7626959621763DF300CC19BF /* default.metal */,
+				76A865332178B79C00E7886E /* gridworld.metal */,
+			);
+			path = shader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +260,8 @@
 				762695922176342100CC19BF /* MPSScaleViewController.swift in Sources */,
 				7626959B21763F2900CC19BF /* UIKit+Helper.swift in Sources */,
 				7626958E2176335500CC19BF /* MetalViewController.swift in Sources */,
+				76A865342178B79C00E7886E /* gridworld.metal in Sources */,
+				76A865362178B7CA00E7886E /* MetalCameraViewController.swift in Sources */,
 				7626959721763DF300CC19BF /* default.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

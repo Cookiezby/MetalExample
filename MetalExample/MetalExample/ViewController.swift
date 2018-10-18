@@ -14,7 +14,8 @@ struct ExampleVC {
 }
 
 class ViewController: UIViewController {
-    private let data: [ExampleVC] = [ExampleVC(title: "MPSScale", vc: { return MPSScaleViewController() })]
+    private let data: [ExampleVC] = [ExampleVC(title: "MPSScale", vc: { return MPSScaleViewController() }),
+                                     ExampleVC(title: "camera", vc: { return MetalCameraViewController() })]
     
     private lazy var tableView: UITableView = {
         let view = UITableView(frame: .zero, style: .plain)
